@@ -179,9 +179,12 @@ _DEFPIN_ARM( 3, 0, 0); _DEFPIN_ARM( 4, 0, 1);
 
 #elif defined(ADAFRUIT_TRINKET_M0)
 
-#define MAX_PIN 7
+#define MAX_PIN 5
 _DEFPIN_ARM( 0, 0, 8); _DEFPIN_ARM( 1, 0, 2); _DEFPIN_ARM( 2, 0, 9);
-_DEFPIN_ARM( 3, 0, 7); _DEFPIN_ARM( 4, 0, 6); _DEFPIN_ARM( 7, 0, 0); _DEFPIN_ARM( 8, 0, 1);
+_DEFPIN_ARM( 3, 0, 7); _DEFPIN_ARM( 4, 0, 6);
+
+_DEFPIN_ARM(7, 0, 0); //Onboard APA102 Data
+_DEFPIN_ARM(8, 0, 1); //Onboard APA102 Clock
 
 #define SPI_DATA  4
 #define SPI_CLOCK 3
